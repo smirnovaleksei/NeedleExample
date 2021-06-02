@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8A031EBC26680E850054E9DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A031EBB26680E850054E9DF /* AppDelegate.swift */; };
 		8A031EBE26680E850054E9DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A031EBD26680E850054E9DF /* SceneDelegate.swift */; };
 		8A031EC026680E850054E9DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A031EBF26680E850054E9DF /* ViewController.swift */; };
-		8A031EC326680E850054E9DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A031EC126680E850054E9DF /* Main.storyboard */; };
 		8A031EC526680E860054E9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A031EC426680E860054E9DF /* Assets.xcassets */; };
 		8A031EC826680E860054E9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A031EC626680E860054E9DF /* LaunchScreen.storyboard */; };
 		8A031ED326680E860054E9DF /* NeedleExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A031ED226680E860054E9DF /* NeedleExampleTests.swift */; };
 		8A031EDE26680E860054E9DF /* NeedleExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A031EDD26680E860054E9DF /* NeedleExampleUITests.swift */; };
+		8A031EED26680FD10054E9DF /* NeedleFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 8A031EEC26680FD10054E9DF /* NeedleFoundation */; };
+		8A031F21266812800054E9DF /* PrinterService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A031F20266812800054E9DF /* PrinterService.framework */; };
+		8A031F22266812800054E9DF /* PrinterService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A031F20266812800054E9DF /* PrinterService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A031F552668147E0054E9DF /* RootComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A031F542668147E0054E9DF /* RootComponent.swift */; };
+		8A031F57266814EE0054E9DF /* ViewControllerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A031F56266814EE0054E9DF /* ViewControllerComponent.swift */; };
+		8A031F59266815F20054E9DF /* Feature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A031F58266815F20054E9DF /* Feature.framework */; };
+		8A031F5A266815F20054E9DF /* Feature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A031F58266815F20054E9DF /* Feature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A031F5D266817070054E9DF /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A031F5C266817070054E9DF /* NeedleGenerated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +41,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8A031F23266812800054E9DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8A031F22266812800054E9DF /* PrinterService.framework in Embed Frameworks */,
+				8A031F5A266815F20054E9DF /* Feature.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8A031EB826680E850054E9DF /* NeedleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeedleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A031EBB26680E850054E9DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A031EBD26680E850054E9DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8A031EBF26680E850054E9DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8A031EC226680E850054E9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A031EC426680E860054E9DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A031EC726680E860054E9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A031EC926680E860054E9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +70,11 @@
 		8A031ED926680E860054E9DF /* NeedleExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NeedleExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A031EDD26680E860054E9DF /* NeedleExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedleExampleUITests.swift; sourceTree = "<group>"; };
 		8A031EDF26680E860054E9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A031F20266812800054E9DF /* PrinterService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PrinterService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A031F542668147E0054E9DF /* RootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootComponent.swift; sourceTree = "<group>"; };
+		8A031F56266814EE0054E9DF /* ViewControllerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerComponent.swift; sourceTree = "<group>"; };
+		8A031F58266815F20054E9DF /* Feature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Feature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A031F5C266817070054E9DF /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A031F59266815F20054E9DF /* Feature.framework in Frameworks */,
+				8A031EED26680FD10054E9DF /* NeedleFoundation in Frameworks */,
+				8A031F21266812800054E9DF /* PrinterService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,8 +112,11 @@
 				8A031ED126680E860054E9DF /* NeedleExampleTests */,
 				8A031EDC26680E860054E9DF /* NeedleExampleUITests */,
 				8A031EB926680E850054E9DF /* Products */,
+				8A031F1F266812800054E9DF /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		8A031EB926680E850054E9DF /* Products */ = {
 			isa = PBXGroup;
@@ -99,13 +131,15 @@
 		8A031EBA26680E850054E9DF /* NeedleExample */ = {
 			isa = PBXGroup;
 			children = (
+				8A031F5C266817070054E9DF /* NeedleGenerated.swift */,
 				8A031EBB26680E850054E9DF /* AppDelegate.swift */,
 				8A031EBD26680E850054E9DF /* SceneDelegate.swift */,
 				8A031EBF26680E850054E9DF /* ViewController.swift */,
-				8A031EC126680E850054E9DF /* Main.storyboard */,
 				8A031EC426680E860054E9DF /* Assets.xcassets */,
 				8A031EC626680E860054E9DF /* LaunchScreen.storyboard */,
 				8A031EC926680E860054E9DF /* Info.plist */,
+				8A031F542668147E0054E9DF /* RootComponent.swift */,
+				8A031F56266814EE0054E9DF /* ViewControllerComponent.swift */,
 			);
 			path = NeedleExample;
 			sourceTree = "<group>";
@@ -128,6 +162,15 @@
 			path = NeedleExampleUITests;
 			sourceTree = "<group>";
 		};
+		8A031F1F266812800054E9DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A031F58266815F20054E9DF /* Feature.framework */,
+				8A031F20266812800054E9DF /* PrinterService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,15 +178,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A031EE226680E860054E9DF /* Build configuration list for PBXNativeTarget "NeedleExample" */;
 			buildPhases = (
+				8A031F5B266816440054E9DF /* ShellScript */,
 				8A031EB426680E850054E9DF /* Sources */,
 				8A031EB526680E850054E9DF /* Frameworks */,
 				8A031EB626680E850054E9DF /* Resources */,
+				8A031F23266812800054E9DF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NeedleExample;
+			packageProductDependencies = (
+				8A031EEC26680FD10054E9DF /* NeedleFoundation */,
+			);
 			productName = NeedleExample;
 			productReference = 8A031EB826680E850054E9DF /* NeedleExample.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +263,9 @@
 				Base,
 			);
 			mainGroup = 8A031EAF26680E850054E9DF;
+			packageReferences = (
+				8A031EEB26680FD10054E9DF /* XCRemoteSwiftPackageReference "needle" */,
+			);
 			productRefGroup = 8A031EB926680E850054E9DF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +284,6 @@
 			files = (
 				8A031EC826680E860054E9DF /* LaunchScreen.storyboard in Resources */,
 				8A031EC526680E860054E9DF /* Assets.xcassets in Resources */,
-				8A031EC326680E850054E9DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,13 +303,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A031F5B266816440054E9DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export SOURCEKIT_LOGGING=0 && needle generate NeedleExample/NeedleGenerated.swift ../NeedleExample/NeedleExample ../NeedleExample/submodules \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A031EB426680E850054E9DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8A031EC026680E850054E9DF /* ViewController.swift in Sources */,
+				8A031F552668147E0054E9DF /* RootComponent.swift in Sources */,
+				8A031F5D266817070054E9DF /* NeedleGenerated.swift in Sources */,
 				8A031EBC26680E850054E9DF /* AppDelegate.swift in Sources */,
+				8A031F57266814EE0054E9DF /* ViewControllerComponent.swift in Sources */,
 				8A031EBE26680E850054E9DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8A031EC126680E850054E9DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A031EC226680E850054E9DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8A031EC626680E860054E9DF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -593,6 +658,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A031EEB26680FD10054E9DF /* XCRemoteSwiftPackageReference "needle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/needle.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.17.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A031EEC26680FD10054E9DF /* NeedleFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A031EEB26680FD10054E9DF /* XCRemoteSwiftPackageReference "needle" */;
+			productName = NeedleFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8A031EB026680E850054E9DF /* Project object */;
 }
