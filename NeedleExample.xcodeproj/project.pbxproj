@@ -21,7 +21,7 @@
 		8A031F57266814EE0054E9DF /* ViewControllerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A031F56266814EE0054E9DF /* ViewControllerComponent.swift */; };
 		8A031F59266815F20054E9DF /* Feature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A031F58266815F20054E9DF /* Feature.framework */; };
 		8A031F5A266815F20054E9DF /* Feature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8A031F58266815F20054E9DF /* Feature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8A031F5D266817070054E9DF /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A031F5C266817070054E9DF /* NeedleGenerated.swift */; };
+		8A8A37F1266BD89C00B549BC /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8A37F0266BD89C00B549BC /* NeedleGenerated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +74,7 @@
 		8A031F542668147E0054E9DF /* RootComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootComponent.swift; sourceTree = "<group>"; };
 		8A031F56266814EE0054E9DF /* ViewControllerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerComponent.swift; sourceTree = "<group>"; };
 		8A031F58266815F20054E9DF /* Feature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Feature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A031F5C266817070054E9DF /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
+		8A8A37F0266BD89C00B549BC /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 		8A031EBA26680E850054E9DF /* NeedleExample */ = {
 			isa = PBXGroup;
 			children = (
-				8A031F5C266817070054E9DF /* NeedleGenerated.swift */,
+				8A8A37F0266BD89C00B549BC /* NeedleGenerated.swift */,
 				8A031EBB26680E850054E9DF /* AppDelegate.swift */,
 				8A031EBD26680E850054E9DF /* SceneDelegate.swift */,
 				8A031EBF26680E850054E9DF /* ViewController.swift */,
@@ -319,7 +319,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export SOURCEKIT_LOGGING=0 && needle generate NeedleExample/NeedleGenerated.swift ../NeedleExample/NeedleExample ../NeedleExample/submodules \n";
+			shellScript = "export SOURCEKIT_LOGGING=0 && needle generate NeedleExample/NeedleGenerated.swift ../NeedleExample\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -330,7 +330,7 @@
 			files = (
 				8A031EC026680E850054E9DF /* ViewController.swift in Sources */,
 				8A031F552668147E0054E9DF /* RootComponent.swift in Sources */,
-				8A031F5D266817070054E9DF /* NeedleGenerated.swift in Sources */,
+				8A8A37F1266BD89C00B549BC /* NeedleGenerated.swift in Sources */,
 				8A031EBC26680E850054E9DF /* AppDelegate.swift in Sources */,
 				8A031F57266814EE0054E9DF /* ViewControllerComponent.swift in Sources */,
 				8A031EBE26680E850054E9DF /* SceneDelegate.swift in Sources */,
