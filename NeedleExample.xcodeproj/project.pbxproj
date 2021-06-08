@@ -178,7 +178,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A031EE226680E860054E9DF /* Build configuration list for PBXNativeTarget "NeedleExample" */;
 			buildPhases = (
-				8A031F5B266816440054E9DF /* ShellScript */,
+				8A031F5B266816440054E9DF /* Needle */,
 				8A031EB426680E850054E9DF /* Sources */,
 				8A031EB526680E850054E9DF /* Frameworks */,
 				8A031EB626680E850054E9DF /* Resources */,
@@ -304,7 +304,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8A031F5B266816440054E9DF /* ShellScript */ = {
+		8A031F5B266816440054E9DF /* Needle */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -313,6 +313,7 @@
 			);
 			inputPaths = (
 			);
+			name = Needle;
 			outputFileListPaths = (
 			);
 			outputPaths = (

@@ -4,69 +4,12 @@
    <Group
       location = "group:submodules"
       name = "submodules">
-      <Group
-         location = "group:PrinterService"
-         name = "PrinterService">
-         <Group
-            location = "group:PrinterService"
-            name = "PrinterService">
-            <FileRef
-               location = "group:PrinterService.swift">
-            </FileRef>
-            <FileRef
-               location = "group:PrinterService.h">
-            </FileRef>
-            <FileRef
-               location = "group:Info.plist">
-            </FileRef>
-         </Group>
-         <Group
-            location = "group:PrinterServiceTests"
-            name = "PrinterServiceTests">
-            <FileRef
-               location = "group:PrinterServiceTests.swift">
-            </FileRef>
-            <FileRef
-               location = "group:Info.plist">
-            </FileRef>
-         </Group>
-         <FileRef
-            location = "group:PrinterService.xcodeproj">
-         </FileRef>
-      </Group>
-      <Group
-         location = "group:Feature"
-         name = "Feature">
-         <FileRef
-            location = "group:Feature.xcodeproj">
-         </FileRef>
-         <Group
-            location = "group:FeatureTests"
-            name = "FeatureTests">
-            <FileRef
-               location = "group:FeatureTests.swift">
-            </FileRef>
-            <FileRef
-               location = "group:Info.plist">
-            </FileRef>
-         </Group>
-         <Group
-            location = "group:Feature"
-            name = "Feature">
-            <FileRef
-               location = "group:Feature.h">
-            </FileRef>
-            <FileRef
-               location = "group:FeatureViewController.swift">
-            </FileRef>
-            <FileRef
-               location = "group:Info.plist">
-            </FileRef>
-            <FileRef
-               location = "group:FeatureViewControllerComponent.swift">
-            </FileRef>
-         </Group>
-      </Group>
+      <FileRef
+         location = "group:Feature/Feature.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:PrinterService/PrinterService.xcodeproj">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:NeedleExample.xcodeproj">
